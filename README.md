@@ -1,7 +1,7 @@
 Bowerbird 2
 ===========
 
-Bowerbird is a wrapper for Bootstrap (via [Bootstrap for Sass](http://github.com/thomas-mcdonald/bootstrap-sass).
+Bowerbird is a wrapper for Bootstrap (via [Bootstrap for Sass](http://github.com/thomas-mcdonald/bootstrap-sass)).
 
 Using Bowerbird
 ---------------
