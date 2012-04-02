@@ -15,3 +15,7 @@ gem "jquery-rails"
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
+
+gem 'rails', "~> 3.2"
+
+gem 'sqlite3'
