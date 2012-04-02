@@ -1,5 +1,5 @@
 Gem::Specification.new do |s|
-  s.name = "bowerbird-v2"
+  s.name = "bowerbird_v2"
   s.version = '0.1.0'
   s.authors = ["Haydn Ewers"]
   s.email = 'haydn@katalyst.com.au'

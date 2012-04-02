@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    bowerbird-v2 (0.1.0)
+    bowerbird_v2 (0.1.0)
       bootstrap-sass (~> 2.0)
 
 GEM
@@ -98,7 +98,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bowerbird-v2!
+  bowerbird_v2!
   jquery-rails
   rails (~> 3.2)
   sass-rails (~> 3.1)
