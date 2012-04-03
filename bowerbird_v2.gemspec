@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = "bowerbird_v2"
-  s.version = '0.1.1'
+  s.version = '2.0.0'
   s.authors = ["Haydn Ewers"]
   s.email = 'haydn@katalyst.com.au'
   s.summary = "Bootstrap, Katalyst style."
