@@ -1,0 +1,60 @@
+@function px($u)
+{ @return if(unitless($u), $u * 10px, $u); }
+
+@mixin define-pad-top($u, $px: px($u))
+{ .pad-t-#{$u}, .pad-tb-#{$u}, .pad-ltr-#{$u}, .pad-box-#{$u}, .pad-#{$u} {padding-top:$px;} }
+
+@mixin define-pad-bottom($u, $px: px($u))
+{ .pad-t-#{$u}, .pad-tb-#{$u}, .pad-ltr-#{$u}, .pad-box-#{$u}, .pad-#{$u} {padding-top:$px;} }
+
+@mixin define-pad-left($u, $px: px($u))
+{ .pad-l-#{$u}, .pad-lr-#{$u}, .pad-ltr-#{$u}, .pad-lbr-#{$u}, .pad-box-#{$u}, .pad-#{$u} {padding-left:$px;} }
+
+@mixin define-pad-right($u, $px: px($u))
+{ .pad-r-#{$u}, .pad-lr-#{$u}, .pad-ltr-#{$u}, .pad-lbr-#{$u}, .pad-box-#{$u}, .pad-#{$u} {padding-right:$px;} }
+
+@mixin define-pad($u, $px: px($u))
+{
+  @include define-pad-top($u, $px: px($u));
+  @include define-pad-bottom($u, $px: px($u));
+  @include define-pad-left($u, $px: px($u));
+  @include define-pad-right($u, $px: px($u));
+}
+
+@mixin define-space-top($u, $px: px($u))
+{ .space-t-#{$u} {margin-top:$px;} }
+
+@mixin define-space-bottom($u, $px: px($u))
+{ .space-b-#{$u} {margin-bottom:$px;} }
+
+@mixin define-space-left($u, $px: px($u))
+{ .space-l-#{$u} {margin-left:$px;} }
+
+@mixin define-space-right($u, $px: px($u))
+{ .space-r-#{$u} {margin-right:$px;} }
+
+@mixin define-space($u, $px: px($u))
+{
+  @include define-space-top($u, $px: px($u));
+  @include define-space-bottom($u, $px: px($u));
+  @include define-space-left($u, $px: px($u));
+  @include define-space-right($u, $px: px($u));
+}
+
+@mixin define-line-height($u, $px: px($u))
+{ .ln-h-#{$u}, .line-h-#{$u}, .line-height-#{$u} {line-height:$u;} }
+
+@mixin define-height($u, $px: px($u))
+{ .height-#{$u} {height:$u;} }
+
+@mixin define-width($u, $px: px($u))
+{ .width-#{$u} {width:$u;} }
+
+@mixin define-dimensions($u, $px: px($u))
+{
+  @include define-pad($u, $px);
+  @include define-space($u, $px);
+  @include define-line-height($u, $px);
+  @include define-height($u, $px);
+  @include define-width($u, $px);
+}
