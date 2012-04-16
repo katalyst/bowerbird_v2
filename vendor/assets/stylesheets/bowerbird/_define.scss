@@ -1,6 +1,46 @@
 @function px($u)
 { @return if(unitless($u), $u * 10px, $u); }
 
+@mixin define-push-up($u, $px: px($u))
+{ .push-u-#{$u} {bottom:$px; position:relative;} }
+
+@mixin define-push-down($u, $px: px($u))
+{ .push-d-#{$u} {top:$px; position:relative;} }
+
+@mixin define-push-left($u, $px: px($u))
+{ .push-l-#{$u} {right:$px; position:relative;} }
+
+@mixin define-push-right($u, $px: px($u))
+{ .push-r-#{$u} {left:$px; position:relative;} }
+
+@mixin define-push($u, $px: px($u))
+{
+  @include define-push-up($u, $px: px($u));
+  @include define-push-down($u, $px: px($u));
+  @include define-push-left($u, $px: px($u));
+  @include define-push-right($u, $px: px($u));
+}
+
+@mixin define-pull-up($u, $px: px($u))
+{ .pull-u-#{$u} {top:-$px;position:relative;} }
+
+@mixin define-pull-down($u, $px: px($u))
+{ .pull-d-#{$u} {bottom:-$px; position:relative;} }
+
+@mixin define-pull-left($u, $px: px($u))
+{ .pull-l-#{$u} {left:-$px; position:relative;} }
+
+@mixin define-pull-right($u, $px: px($u))
+{ .pull-r-#{$u} {right:-$px; position:relative;} }
+
+@mixin define-pull($u, $px: px($u))
+{
+  @include define-pull-up($u, $px: px($u));
+  @include define-pull-down($u, $px: px($u));
+  @include define-pull-left($u, $px: px($u));
+  @include define-pull-right($u, $px: px($u));
+}
+
 @mixin define-pad-top($u, $px: px($u))
 { .pad-t-#{$u}, .pad-tb-#{$u}, .pad-ltr-#{$u}, .pad-box-#{$u}, .pad-#{$u} {padding-top:$px;} }
 
@@ -41,8 +81,28 @@
   @include define-space-right($u, $px: px($u));
 }
 
+@mixin define-backspace-top($u, $px: px($u))
+{ .backspace-t-#{$u} {margin-top:-$px;} }
+
+@mixin define-backspace-bottom($u, $px: px($u))
+{ .backspace-b-#{$u} {margin-bottom:-$px;} }
+
+@mixin define-backspace-left($u, $px: px($u))
+{ .backspace-l-#{$u} {margin-left:-$px;} }
+
+@mixin define-backspace-right($u, $px: px($u))
+{ .backspace-r-#{$u} {margin-right:-$px;} }
+
+@mixin define-backspace($u, $px: px($u))
+{
+  @include define-backspace-top($u, $px: px($u));
+  @include define-backspace-bottom($u, $px: px($u));
+  @include define-backspace-left($u, $px: px($u));
+  @include define-backspace-right($u, $px: px($u));
+}
+
 @mixin define-line-height($u, $px: px($u))
-{ .ln-h-#{$u}, .line-h-#{$u}, .line-height-#{$u} {line-height:$u;} }
+{ .line-h-#{$u}, .line-height-#{$u} {line-height:$u;} }
 
 @mixin define-height($u, $px: px($u))
 { .height-#{$u} {height:$u;} }
@@ -53,7 +113,10 @@
 @mixin define-dimensions($u, $px: px($u))
 {
   @include define-pad($u, $px);
+  @include define-push($u, $px);
+  @include define-pull($u, $px);
   @include define-space($u, $px);
+  @include define-backspace($u, $px);
   @include define-line-height($u, $px);
   @include define-height($u, $px);
   @include define-width($u, $px);

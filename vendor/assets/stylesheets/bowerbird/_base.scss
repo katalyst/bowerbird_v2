@@ -58,6 +58,6 @@ hr.space-5px {margin-bottom:4px;}
 .w-75pc {width:75%;}
 .w-100pc {width:100%;}
 
-@each $u in 0 5px 1 15px 2 25px 3 35px 4 45px 6 65px 7 75px 8 85px 9 95px
+@each $u in 0 5px 1 15px 2 25px 3 35px 4 45px 5 55px 6 65px 7 75px 8 85px 9 95px
 { @include define-dimensions($u); }
 
