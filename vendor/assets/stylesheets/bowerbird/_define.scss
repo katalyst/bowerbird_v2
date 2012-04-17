@@ -45,7 +45,7 @@
 { .pad-t-#{$u}, .pad-tb-#{$u}, .pad-ltr-#{$u}, .pad-box-#{$u}, .pad-#{$u} {padding-top:$px;} }
 
 @mixin define-pad-bottom($u, $px: px($u))
-{ .pad-t-#{$u}, .pad-tb-#{$u}, .pad-ltr-#{$u}, .pad-box-#{$u}, .pad-#{$u} {padding-top:$px;} }
+{ .pad-b-#{$u}, .pad-tb-#{$u}, .pad-lbr-#{$u}, .pad-#{$u} {padding-bottom:$px;} }
 
 @mixin define-pad-left($u, $px: px($u))
 { .pad-l-#{$u}, .pad-lr-#{$u}, .pad-ltr-#{$u}, .pad-lbr-#{$u}, .pad-box-#{$u}, .pad-#{$u} {padding-left:$px;} }
