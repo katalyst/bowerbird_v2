@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.summary = "Bootstrap, Katalyst style."
   s.homepage = "http://github.com/katalyst/bowerbird_v2"
 
-  s.add_dependency 'bootstrap-sass', '~> 2.0'
+  s.add_dependency 'bootstrap-sass', '2.0.2'
 
   s.add_development_dependency 'sass-rails', '~> 3.1'
 
