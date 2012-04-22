@@ -1,8 +1,8 @@
 PATH
   remote: .
   specs:
-    bowerbird_v2 (0.1.0)
-      bootstrap-sass (~> 2.0)
+    bowerbird_v2 (2.0.0)
+      bootstrap-sass (= 2.0.2)
 
 GEM
   remote: http://rubygems.org/
