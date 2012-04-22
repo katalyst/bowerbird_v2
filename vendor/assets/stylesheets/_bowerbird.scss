@@ -23,24 +23,24 @@
 @import "bootstrap/component-animations";
 @import "bootstrap/close";
 
-// Components: Buttons & Alerts
+// Components: buttons & alerts
 @import "bootstrap/buttons";
 @import "bootstrap/button-groups";
 @import "bootstrap/alerts"; // Note: alerts share common CSS with buttons and thus have styles in buttons.less
 
-// Components: Nav
+// Components: nav
 @import "bootstrap/navs";
 @import "bootstrap/navbar";
 @import "bootstrap/breadcrumbs";
 @import "bootstrap/pagination";
 @import "bootstrap/pager";
 
-// Components: Popovers
+// Components: popovers
 @import "bootstrap/modals";
 @import "bootstrap/tooltip";
 @import "bootstrap/popovers";
 
-// Components: Misc
+// Components: misc
 @import "bootstrap/thumbnails";
 @import "bootstrap/labels";
 @import "bootstrap/progress-bars";
@@ -48,8 +48,9 @@
 @import "bootstrap/carousel";
 @import "bootstrap/hero-unit";
 
-// Utility classes
+// Utilities
 @import "bootstrap/utilities"; // Has to be last to override when necessary
 
 // Bowerbird
+@import "bowerbird/define";
 @import "bowerbird/base";
